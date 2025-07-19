@@ -5,137 +5,117 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Punit Verma | Portfolio</title>
   <style>
-    /* Basic Reset */
     * {
-      margin: 0; padding: 0; box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
+
     body {
-      background: #f5f7fa;
+      background: #f0f2f5;
       color: #333;
       line-height: 1.6;
     }
+
     header {
       background-color: #0d6efd;
       color: white;
       padding: 20px 0;
       text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
     }
-    header h1 {
-      margin-bottom: 5px;
-    }
-    nav {
-      margin-top: 10px;
-    }
+
     nav a {
       color: white;
       margin: 0 15px;
       text-decoration: none;
-      font-weight: 600;
-      transition: color 0.3s;
+      font-weight: bold;
     }
+
     nav a:hover {
-      color: #ffca28;
+      color: #ffc107;
     }
+
     .container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 30px auto;
-      padding: 0 15px;
+      padding: 0 20px;
     }
+
     section {
-      margin-bottom: 60px;
+      margin-bottom: 50px;
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
-    /* Home Section */
+
     #home {
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       gap: 30px;
-      flex-wrap: wrap;
-      background: white;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
+
     #home img {
       width: 180px;
       height: 180px;
       border-radius: 50%;
-      object-fit: cover;
       border: 4px solid #0d6efd;
+      object-fit: cover;
     }
-    #home div {
-      flex: 1;
-      min-width: 250px;
-    }
+
     #home h2 {
       font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-    #home p {
-      font-size: 1.1rem;
-      color: #555;
-    }
-    /* Section Titles */
-    section h2 {
-      border-bottom: 3px solid #0d6efd;
-      display: inline-block;
-      margin-bottom: 20px;
-      padding-bottom: 5px;
       color: #0d6efd;
     }
-    /* About Section */
-    #about p {
+
+    #home p {
       font-size: 1.1rem;
       color: #444;
-      max-width: 700px;
     }
-    /* Experience & Projects */
+
+    h2 {
+      color: #0d6efd;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #0d6efd;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
     ul {
-      list-style-type: disc;
       padding-left: 20px;
-      color: #444;
+      list-style: disc;
     }
-    /* Contact Form */
-    form {
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      max-width: 600px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
+
     form input, form textarea {
       width: 100%;
       padding: 10px;
-      margin: 8px 0 16px 0;
+      margin-top: 10px;
+      border-radius: 5px;
       border: 1px solid #ccc;
-      border-radius: 4px;
       font-size: 1rem;
-      resize: vertical;
     }
+
     form button {
       background-color: #0d6efd;
       color: white;
       padding: 12px 25px;
       border: none;
-      border-radius: 4px;
+      border-radius: 5px;
       font-size: 1.1rem;
       cursor: pointer;
-      transition: background-color 0.3s;
+      margin-top: 10px;
     }
+
     form button:hover {
       background-color: #084ed6;
     }
-    /* Responsive Nav */
-    @media(max-width: 600px) {
+
+    @media (max-width: 600px) {
       #home {
         flex-direction: column;
         text-align: center;
-      }
-      #home img {
-        margin: 0 auto;
       }
     }
   </style>
@@ -145,7 +125,7 @@
     <h1>Punit Verma</h1>
     <nav>
       <a href="#home">Home</a>
-      <a href="#about">About Me</a>
+      <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
@@ -153,64 +133,59 @@
   </header>
 
   <main class="container">
-
-    <!-- Home Section -->
+    <!-- Home -->
     <section id="home">
-      <img src="image" alt="Punit Verma Photo" /></img>
+      <img src="images/punit.jpg" alt="Punit Verma Photo" />
       <div>
         <h2>Welcome!</h2>
-        <p>Hi, I am <strong>Punit Verma</strong>. Project Manager & Bid Manager – Software Development
-
-I am a results-driven Project and Bid Manager with 7+ years of experience in the IT industry, currently leading software development initiatives at Pragyaware Informatics Pvt Ltd. My dual role bridges project execution and business acquisition, ensuring seamless alignment between client requirements, technical solutions, and timely delivery</p>
+        <p>
+          Hi, I am <strong>Punit Verma</strong> — Project Manager & Bid Manager in Software Development.
+          I am a results-driven professional with 7+ years of experience in the IT industry,
+          currently leading projects at Pragyaware Informatics Pvt Ltd. I bridge project execution
+          and business acquisition to ensure client satisfaction and successful delivery.
+        </p>
       </div>
     </section>
 
-    <!-- About Me Section -->
+    <!-- About -->
     <section id="about">
       <h2>About Me</h2>
       <p>
-        Hello! I am Punit Verma, a passionate IT professional. I love building software solutions and learning new technologies. 
+        Hello! I am Punit Verma, a passionate IT professional. I love managing software solutions,
+        understanding client needs, and driving projects to success through collaboration and strategic planning.
       </p>
     </section>
 
-    <!-- Experience Section -->
+    <!-- Experience -->
     <section id="experience">
       <h2>Experience</h2>
       <ul>
-        <li>Business Development Manager
-Roundpay Technomedia Private Limited
-2018 – 2024
-
-Led business development activities focusing on IT solutions and services.
-
-Managed client relationships and expanded company reach in new markets.
-
-Coordinated with internal teams to deliver customized software products.
-
-Bid Manager – IT
-Pragyaware Informatics Pvt Ltd
-2024 – Present
-
-Managing end-to-end bid processes for software development projects.
-
-Preparing and submitting competitive proposals for government and private tenders.
-
-Collaborating with technical and commercial teams to ensure compliance and quality.
-
-Enhancing the company’s bid win ratio through strategic proposal management.
-</li>
+        <li>
+          <strong>Business Development Manager</strong><br />
+          Roundpay Technomedia Private Limited (2018 – 2024)<br />
+          • Led business development for IT solutions and services.<br />
+          • Managed client relationships and market expansion.<br />
+          • Coordinated internal teams to deliver customized software.
+        </li><br/>
+        <li>
+          <strong>Bid Manager – IT</strong><br />
+          Pragyaware Informatics Pvt Ltd (2024 – Present)<br />
+          • Managing end-to-end bid processes.<br />
+          • Submitting competitive proposals for government and private tenders.<br />
+          • Ensuring compliance, quality, and timely submissions.
+        </li>
       </ul>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects -->
     <section id="projects">
       <h2>Projects</h2>
       <ul>
-        <li>Projects will be added soon.</li>
+        <li>Projects will be updated soon.</li>
       </ul>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section id="contact">
       <h2>Contact Me</h2>
       <form action="https://formspree.io/f/mldlepbr" method="POST">
@@ -221,8 +196,6 @@ Enhancing the company’s bid win ratio through strategic proposal management.
         <button type="submit">Send Message</button>
       </form>
     </section>
-
   </main>
-
 </body>
 </html>
